@@ -1,0 +1,13 @@
+GET  - so'rovi serverdan ma'lumot olish uchun ishlatiladi. Bu so'rov hech qanday ma'lumot yubormaydi, balki serverdan ma'lumot so'raydi va Xavfsiz hisoblanadi, ya'ni u ma'lumotlar bazasini o'zgartirmaydi.
+
+
+POST - so'rovi serverga yangi ma'lumotlarni yuborish uchun ishlatiladi. Bu so'rov odatda yangi resurs yaratish yoki serverdagi ma'lumotlar bazasiga yozish uchun qo'llaniladi Ma'lumotlar serverda o'zgartiriladi yoki yangi yozuv yaratiladi.
+Xavfsiz bo'lmagan operatsiya sifatida qaraladi, chunki ma'lumotlar o'zgaradi.
+
+
+PUT - so'rovi serverdagi mavjud ma'lumotni yangilash uchun ishlatiladi. Bu butun resursni almashtiradi yoki mavjud yozuvni yangilaydi Agar mavjud resurs bo'lmasa, ba'zi hollarda yangi resurs yaratilishi mumkin.
+Qo'llanadigan ma'lumotlar body qismida yuboriladi.
+
+DELETE - so'rovi serverdan ma'lumotni o'chirish uchun ishlatiladi. Bu so'rov ma'lumotlarni o'chirish orqali serverdagi resurslarni yo'q qiladi Xavfsiz bo'lmagan operatsiya sifatida qaraladi, chunki u ma'lumotlar bazasini o'zgartiradi.
+
+Fetch API va boshqa kutubxonalar orqali ushbu so'rovlarni oson amalga oshirishingiz mumkin. GET so'rovlari odatda URL orqali ma'lumotlarni oladi, POST, PUT, va DELETE esa ma'lumotlarni serverga yuborish orqali ma'lumotlarni o'zgartiradi yoki o'chiradi.
